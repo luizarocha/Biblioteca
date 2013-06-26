@@ -51,7 +51,9 @@ public void setCliente(Usuario cliente) {
 	this.cliente = cliente;
 }
 
-public String dadosExem (){
+public String descricao (){
 	String descricao;
-	descricao = (titulo,sub); 
+	descricao = ("Titulo"+ this.titulo + "Subtitulo" + this.subTitulo + "Disponibilidade" + this.disponibilidade + "Cliente" + this.cliente); 
 	return descricao;
+}
+}

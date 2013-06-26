@@ -77,7 +77,7 @@ public class Usuario {   /*Classes*/
 	
 	public String dados (){
 		String descricao;
-		descricao = ("Nome:" + this.nome + "\n Sobrenome:" + this.sobrenome + "\n CPF" + this.cpf + "\n Data de nascimento: " + this.datNasc + "\n Endereço:" + this.endereco + "\n Exemplares emprestados:" + this.exemEmpres);
+		descricao = ("Nome:" + this.nome + "\n Sobrenome:" + this.sobrenome + "\n CPF" + this.cpf + "\n Data de nascimento: " + this.datNasc + "\n Endereço:" + this.end + "\n Exemplares emprestados:" + this.exemEmprestados);
 		return descricao;
 	}
 	
@@ -90,4 +90,3 @@ public class Usuario {   /*Classes*/
 		return desCompleta;
 	}
 	}
-}
