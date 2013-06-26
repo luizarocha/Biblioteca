@@ -1,8 +1,7 @@
 /*Alunos: Bruno Guilherme Ferreira dos Santos e Luiza Carolina Rocha - Téc. em Informática - tarde */
 package biblioteca;
-import exercicio.Data;
 
-public class Endereco extends Usuario {
+public class Endereco {
 	public String logradouro;
 	public String nome;
 	public String complemento;
@@ -12,8 +11,7 @@ public class Endereco extends Usuario {
 	public String estado;
 	public String pais;
 
-	public Endereco (String nome, String sobrenome, String cpf, Data datNasc, String endereco, String exemEmpres,String logradouro, String nome, String complemento, String bairro, String cep, String cidade, String estado, String pais){
-	super (nome, sobrenome, cpf, datNasc, endereco, exemEmpres);
+	public Endereco (String logradouro, String nome, String complemento, String bairro, String cep, String cidade, String estado, String pais){
 	this.logradouro = logradouro;
 	this.nome = nome;
 	this.complemento = complemento;
@@ -72,4 +70,9 @@ public void setPais(String pais) {
 	this.pais = pais;
 }
 
+public String descricaoEnd (){
+	String descricaoEnd;
+	descricaoEnd = ("\n Logradouro:" + this.logradouro + "\n Nome" + this.nome + "\n Complemento:" + this.complemento + "\n Bairro:" + this.bairro + "\n Cep:" + this.cep + "\n Cidade:" + this.cidade + "\n stado:" + this.estado + "\n País:" + this.pais); 
+	return descricaoEnd;
+}
 }

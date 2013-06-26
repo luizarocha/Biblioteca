@@ -1,3 +1,4 @@
+/*Alunos: Bruno Guilherme Ferreira dos Santos e Luiza Carolina Rocha - Téc. em Informática - tarde */
 package biblioteca;
 
 public class Livro extends Exemplar {
@@ -6,12 +7,24 @@ public class Livro extends Exemplar {
 	public String edicao;
 	public String volume;
 	
-public Livro (String titulo, String subTitulo, boolean disponibilidade, Usuario cliente,String autor, String editora, String edicao, String volume){
-	super(titulo, subTitulo, disponibilidade, cliente);
+public Livro (String titulo, String subTitulo, boolean disponibilidade, String autor, String editora, String edicao, String volume){
+	super (titulo, subTitulo, disponibilidade);
 	this.autor = autor;
 	this.editora = editora;
 	this.edicao = edicao;
 	this.volume = volume;
+	
+}
+
+public Livro (String titulo, String subTitulo, boolean disponibilidade, String autor){
+	super (titulo, subTitulo, disponibilidade);
+	this.autor = autor;
+}
+
+public String descricaolivro (){
+	String descricao;
+	descricao = ("\n Titulo"+ this.titulo + "\n Subtitulo" + this.subTitulo + "\n Disponibilidade" + this.disponibilidade + "\n Nome do Cliente" + this.cliente.nome + "\n Autor:" + this.autor + "\n editora" +this.editora + "\n edição"+ this.edicao +"\n volume" + this.volume ); 
+	return descricao;
 }
 
 public String getAutor() {

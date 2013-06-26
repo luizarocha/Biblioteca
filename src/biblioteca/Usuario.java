@@ -84,9 +84,14 @@ public class Usuario {   /*Classes*/
 	public String desCompleta (){
 		String desCompleta = this.dados();
 		for (Exemplar exemplar: this.exemEmprestados){
-			desCompleta += exemplar.descricao();
+			desCompleta += exemplar.descricaoexemplar();
 			
 		}
 		return desCompleta;
 	}
+	
+	/*public static void main(String[] args) {
+		Usuario u = new Usuario("Derik", "Evangelista", "00001", new Data(5,9,1990), new Endereco("Rua tal", nome, complemento, bairro, cep, cidade, estado, pais))
+	}*/
+	
 	}
